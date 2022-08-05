@@ -12,6 +12,9 @@ def safely_get_value(dct, key, default = None):
 from typing import Mapping, Any, Union, Sequence, TypeVar
 
 
+T = TypeVar('T')
+
+
 def safely_get_value(
         dct: Mapping,
         key: Any,
